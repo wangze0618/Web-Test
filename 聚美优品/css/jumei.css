@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
 #top {
   width: 100%px;
   height: 177px;
@@ -151,7 +155,6 @@
   width: 317px;
   border-width: 3px 0 3px 3px;
   outline: none;
-
   color: gray;
 }
 
@@ -163,6 +166,7 @@
   background-color: #ed145b;
   color: white;
 }
+
 #search_box {
   width: 423px;
   height: 38px;
@@ -171,7 +175,6 @@
   /* position: relative;
   top: 35px; */
   padding-top: 28px;
-
   /* margin-top: -10px; */
 }
 
@@ -181,6 +184,7 @@
   background-color: black;
   display: inline-block;
 }
+
 #nav ul {
   list-style-type: none;
   width: 100%;
@@ -282,6 +286,48 @@
   margin-right: 15px;
   box-shadow: 2px 2px 4px #e3e3e3;
 }
+
+.tags {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+
+.tags span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/极速免税.jpg);
+}
+
+#little_box {
+  width: 100px;
+  height: 30px;
+  display: block;
+  /* border: 1px dashed black; */
+  position: absolute;
+  z-index: 2;
+  margin-top: 368px;
+  left: 445px;
+}
+
+#little_box ul {
+  display: inline-block;
+  /* border: 1px salmon solid; */
+  width: 120px;
+  height: 15px;
+}
+
+#little_box li {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 100%;
+  margin: 0 3px;
+  opacity: blur(1px);
+}
+
 .as {
   overflow: hidden;
   display: block;
@@ -298,7 +344,7 @@
   height: 400px;
   margin: 0 auto;
   overflow: hidden;
-  border: 1px solid gray;
+  border: 1px solid #cfcfcf;
   box-shadow: gray 0px 0px 5px;
   position: relative;
 }
@@ -315,6 +361,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   filter: blur(3px);
 }
+
 #single::after {
   content: "";
   width: 50px;
@@ -325,7 +372,6 @@
   border-radius: 25px;
   right: 0px;
   z-index: 2;
-
   background-color: rgba(0, 0, 0, 0.5);
   filter: blur(3px);
 }
@@ -343,18 +389,21 @@
   height: 400px;
   float: left;
 }
+
 #pic2 {
   background-image: url(../img/2.jpg);
   width: 1000px;
   height: 400px;
   float: left;
 }
+
 #pic3 {
   background-image: url(../img/3.jpg);
   width: 1000px;
   height: 400px;
   float: left;
 }
+
 #pic4 {
   background-image: url(../img/4.jpg);
   width: 1000px;
