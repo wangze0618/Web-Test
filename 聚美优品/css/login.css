@@ -57,15 +57,16 @@
 #sign_pic {
   display: block;
   position: absolute;
-  left: 300px;
+  left: 200px;
   top: 100px;
 }
 
 #sign_pic a {
   display: inline-block;
-  width: 420px;
+  margin-left: 200px;
+  width: 580px;
   height: 370px;
-  background-image: url(../img/signPic.jpg);
+  background-image: url(../img/loginPic.jpg);
 }
 
 #form {
@@ -92,7 +93,7 @@
 
 #sign_info_p1 {
   display: block;
-  width: 130px;
+  width: 136px;
   height: 40px;
   float: right;
   margin-top: -50px;
@@ -126,7 +127,7 @@
   float: left;
 }
 
-input {
+.input_info_box {
   width: 300px;
   height: 40px;
   display: inline-block;
@@ -137,8 +138,7 @@ input {
   float: right;
   width: 130px;
   height: 42px;
-  position: relative;
-  left: -30px;
+  margin-right: 24px;
   border: 1px solid #cfcfcf;
 }
 
@@ -177,14 +177,50 @@ input {
   text-decoration: underline;
 }
 
-#boxx {
-  width: 130px;
-  margin-left: -40px;
+.input_radio {
+  float: left;
+  margin-left: 50px;
+  position: relative;
+  top: -10px;
 }
 
+.input_radio input {
+  padding-left: 20px;
+}
 .input {
-  margin-right: 30px;
-  margin: 20px;
+  margin-right: 50px;
   position: relative;
-  right: 20px;
+  padding-top: 30px;
+  /* top: 20px; */
+}
+
+#infoo {
+  width: 120px;
+  float: left;
+  margin-left: 24px;
+}
+
+#check {
+  position: absolute;
+  margin-top: 75px;
+  margin-left: 24px;
+}
+
+#login_a {
+  position: absolute;
+  display: inline-block;
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  letter-spacing: 2px;
+  text-decoration: none;
+  margin-top: 120px;
+  margin-left: -145px;
+  background-color: #e31256;
+}
+
+#login_a:hover {
+  transition: all 0.4s ease;
+  background-color: #bd0e48;
 }
